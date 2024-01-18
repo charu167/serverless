@@ -1,4 +1,8 @@
 module.exports = (req, res) => {
-  res.json({ code: req.query.code });
-  return
+  if (req.method == "POST") {
+    res.json({ code: req.query.code });
+  } else {
+    res.send("mehtod not post");
+  }
+  return;
 };
