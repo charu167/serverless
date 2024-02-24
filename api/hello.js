@@ -1,4 +1,4 @@
 module.exports = (req, res) => {
-    res.send("<h1>Bellllllooooo</h1>")
+    res.send(process.env.BELLO)
 };
 
